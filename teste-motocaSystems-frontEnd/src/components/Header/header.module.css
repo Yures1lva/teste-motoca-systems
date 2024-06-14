@@ -1,0 +1,10 @@
+ul{
+    display: flex;
+    justify-content: end;    
+}
+
+li{
+    display: flex;
+    margin: 0 .5em;
+
+}
