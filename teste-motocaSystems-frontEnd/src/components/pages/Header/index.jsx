@@ -1,6 +1,6 @@
 import './header.module.css'
-import home from '../../assets/home.png'
-import perfil from '../../assets/perfil.png'
+import home from '../../../assets/home.png'
+import perfil from '../../../assets/perfil.png'
 
 function Header(){
     return (
