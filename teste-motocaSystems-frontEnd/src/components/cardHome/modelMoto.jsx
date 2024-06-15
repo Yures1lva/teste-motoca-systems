@@ -1,8 +1,8 @@
  // eslint-disable-next-line no-unused-vars
  export default class Moto{
      
-    constructor({codigo, modelo, cor, valor, status}){
-        this.codigo = codigo;
+    constructor({id, modelo, cor, valor, status}){
+        this.id = id;
         this.modelo = modelo;
         this.cor = cor;
         this.valor = valor;

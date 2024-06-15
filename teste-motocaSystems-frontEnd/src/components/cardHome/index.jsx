@@ -18,14 +18,14 @@ function CardHome({props}){
     ]
 
     // eslint-disable-next-line no-unused-vars
-    const moto = new Moto({codigo: props.codigo, modelo: props.modelo, cor: props.cor, valor: props.valor ,status: props.status})
+    const moto = new Moto({id: props.id, modelo: props.modelo, cor: props.cor, valor: props.valor ,status: props.status})
     meta [moto.status]
   
     
     return <>
     
         <article  className={styles.card}>
-                <p>#{("000" + moto.codigo).slice(-4)}</p>
+                <p>#{("000" + moto.id).slice(-4)}</p>
                 <ul>
                     <li><span>{moto.modelo} <a className={meta[moto.status].style} >{meta[moto.status].value}</a></span></li>
                     <li>valor: R$<span>{moto.valor}</span></li>

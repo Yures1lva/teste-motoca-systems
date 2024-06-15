@@ -3,6 +3,8 @@ import Header from "../Header"
 import styles from "./home.module.css"
 import CardHome from "../../../components/cardHome"
 import React, { useEffect, useState } from "react"
+import { Link } from "react-router-dom"
+
 
 
 
@@ -30,10 +32,10 @@ function Home() {
              <h3>Tabela de Motos</h3>
              <ul>
                  <li>Barra de pesquisa</li>
-                 <li><button><i>+ </i>NOVO REGISTRO</button></li>
+                 <li><Link  ><button  ><i>+ </i>NOVO REGISTRO</button></Link ></li>
              </ul>
          </div>
-         {(cards.map((card) => (<CardHome  key={card.codigo} props={card}/>)))}
+         {(cards.map((card) => (<CardHome  key={card.id} props={card}/>)))}
  
            
          </>
