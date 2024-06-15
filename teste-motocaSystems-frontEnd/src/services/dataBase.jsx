@@ -21,7 +21,7 @@ export  function getCards(setCards) {
     }
 }
 
-export function deteleCards(id){
+export async function deteleCards(id){
     try {
         fetch(api+`/${id}`, {method:"DELETE", })
     } catch (error) {

@@ -19,6 +19,9 @@ function CardHome({props}){
     
     ]
 
+    //refresh com useState
+   
+
     // eslint-disable-next-line no-unused-vars
     const moto = new Moto({id: props.id, codigo: props.codigo, modelo: props.modelo, cor: props.cor, valor: props.valor ,status: props.status})
     meta [moto.status]
@@ -35,7 +38,9 @@ function CardHome({props}){
                 </ul>
                 <div>
                    
-                    <a onClick={()=>{deteleCards(moto.id)}}>
+                    <a  onClick={async ()=>{ deteleCards(moto.id).then(()=>{window.location.reload()})
+                        
+                    }}>
 
                     <img src={trash} alt="excluir" />
 
