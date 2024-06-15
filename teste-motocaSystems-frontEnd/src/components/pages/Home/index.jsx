@@ -1,28 +1,17 @@
-/* eslint-disable no-unused-vars */
-import Header from "../Header"
+
 import styles from "./home.module.css"
 import CardHome from "../../../components/cardHome"
-import React, { useEffect, useState } from "react"
+import  { useEffect, useState } from "react"
 import { Link } from "react-router-dom"
-
-
+import { getCards } from "../../../services/dataBase"
 
 
 
 function Home() {
     const [cards,setCards] = useState([]);
    
-    const getCards = () => {
-        
-        try {
-             fetch('http://localhost:3000/motos').then((res) => res.json()).then((data) => setCards(data))
-        } catch (error) {
-            console.log("deu erro")
-        }
-    }
-     
-    useEffect(() => {
-        getCards()
+    useEffect(()  =>  {
+       getCards(setCards)
     }, [])
  
      return (

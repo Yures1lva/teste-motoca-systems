@@ -3,6 +3,8 @@ import trash from '../../assets/trash.png'
 import view from '../../assets/view.png'
 import styles from './card.module.css'
 import Moto from './modelMoto'
+import { deteleCards } from '../../services/dataBase'
+
 
 
 
@@ -18,10 +20,10 @@ function CardHome({props}){
     ]
 
     // eslint-disable-next-line no-unused-vars
-    const moto = new Moto({codigo: props.codigo, modelo: props.modelo, cor: props.cor, valor: props.valor ,status: props.status})
+    const moto = new Moto({id: props.id, codigo: props.codigo, modelo: props.modelo, cor: props.cor, valor: props.valor ,status: props.status})
     meta [moto.status]
   
-    
+
     return <>
     
         <article  className={styles.card}>
@@ -33,7 +35,7 @@ function CardHome({props}){
                 </ul>
                 <div>
                    
-                    <a href="">
+                    <a onClick={()=>{deteleCards(moto.id)}}>
 
                     <img src={trash} alt="excluir" />
 
