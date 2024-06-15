@@ -27,12 +27,12 @@ function Home() {
  
      return (
          <>
-         <Header></Header>
+        
          <div className={styles.barraInicial}>
              <h3>Tabela de Motos</h3>
              <ul>
                  <li>Barra de pesquisa</li>
-                 <li><Link  ><button  ><i>+ </i>NOVO REGISTRO</button></Link ></li>
+                 <li><Link to={"/registro"} ><button  ><i>+ </i>NOVO REGISTRO</button></Link ></li>
              </ul>
          </div>
          {(cards.map((card) => (<CardHome  key={card.id} props={card}/>)))}

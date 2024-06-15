@@ -1,25 +1,19 @@
 {
-    "motos": [
-        { 
-            "id": 1,
-            "modelo": "pop",
-            "cor": "branca",
-            "valor": 10000.0,
-            "status": 0
-        },
-        { 
-            "id": 2,
-            "modelo": "pop",
-            "cor": "preta",
-            "valor": 10000.0,
-            "status": 1
-        },
-        { 
-            "id": 3,
-            "modelo": "vermelha",
-            "cor": "preta",
-            "valor": 10000.0,
-            "status": 2
-        }
-    ]
+  "motos": [
+    {
+      "codigo": 1,
+      "modelo": "pop",
+      "cor": "branca",
+      "valor": 10000,
+      "status": 0
+    },
+    {
+      "id": "5d1a",
+      "codigo": "2",
+      "modelo": "pop",
+      "cor": "preta",
+      "valor": "10000",
+      "status": "1"
+    }
+  ]
 }
