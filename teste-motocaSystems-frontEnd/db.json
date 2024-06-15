@@ -1,0 +1,25 @@
+{
+    "motos": [
+        { 
+            "codigo": 1,
+            "modelo": "pop",
+            "cor": "branca",
+            "valor": 10000.0,
+            "status": 0
+        },
+        { 
+            "codigo": 2,
+            "modelo": "pop",
+            "cor": "preta",
+            "valor": 10000.0,
+            "status": 1
+        },
+        { 
+            "codigo": 3,
+            "modelo": "vermelha",
+            "cor": "preta",
+            "valor": 10000.0,
+            "status": 2
+        }
+    ]
+}
