@@ -1,5 +1,8 @@
-import styles from'./home.module.css'
 import Header from "../Header"
+import styles from "./home.module.css"
+import CardHome from "../../../components/cardHome"
+
+
 
 
 
@@ -14,6 +17,8 @@ function Home() {
                 <li><button><i>+ </i>NOVO REGISTRO</button></li>
             </ul>
         </div>
+        <CardHome></CardHome>
+        
         </>
     )
 } export default Home
