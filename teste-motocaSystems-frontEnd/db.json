@@ -7,6 +7,14 @@
       "cor": "preta",
       "valor": "11000",
       "status": 0
+    },
+    {
+      "id": "0e9e",
+      "codigo": "6",
+      "modelo": "pop 110i",
+      "cor": "branca",
+      "valor": "12000",
+      "status": "1"
     }
   ]
 }

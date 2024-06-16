@@ -5,4 +5,8 @@
     justify-content: space-between;
     border-bottom: 0.1px solid #CAC9CD;
 }
+/*scale tava duplicando pois LINK ou tags 'a' já tinha um transformer no hover*/
+.buttonRegistro:hover{
+    transform: scale(1);
+}
 

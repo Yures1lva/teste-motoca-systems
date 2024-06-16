@@ -21,7 +21,7 @@ function Home() {
              <h3>Tabela de Motos</h3>
              <ul>
                  <li>Barra de pesquisa</li>
-                 <li><Link to={"/registro"} ><button  ><i>+ </i>NOVO REGISTRO</button></Link ></li>
+                 <li><Link to={"/registro"} className={styles.buttonRegistro} ><button  ><i>+ </i>NOVO REGISTRO</button></Link ></li>
              </ul>
          </div>
          {(cards.map((card) => (<CardHome  key={card.id} props={card}/>)))}

@@ -36,7 +36,7 @@ function Registro(){
 
         <h2>Preencha as informações abaixo para registrar uma Moto</h2>
 
-        <form action="">
+        <form className={styles.formGroup}>
          
          <div className={styles.inputGroup}>
            <label >Código </label>
@@ -44,19 +44,29 @@ function Registro(){
 
          </div>
 
-         <label >Modelo <input type="text" onChange={(e)=>{setModelo(e.target.value)}} /></label>
+        <div className={styles.inputGroup}>
+         <label >Modelo </label>
+         <input type="text" onChange={(e)=>{setModelo(e.target.value)}} />
+         </div>
 
-         <label >Cor <input type="text"  onChange={(e)=>{setCor(e.target.value)}} /></label>
+         <div className={styles.inputGroup}>
+         <label >Cor</label>
+         <input type="text"  onChange={(e)=>{setCor(e.target.value)}} />
+         </div>
 
-         <label >Valor <input type="text"  onChange={(e)=>{setValor(e.target.value)}} /></label>
+         <div className={styles.inputGroup}>
+         <label >Valor </label> 
+         <input type="text"  onChange={(e)=>{setValor(e.target.value)}} />
+         </div>
 
+         <div className={styles.selectGroup}>
          <label >Status:</label>
             <select id="estoque" name="estoque"  onChange={(e)=>{setEstoque(e.target.value)}}>
-            <option value="0">Em estoque</option>
-            <option value="1">Sem estoque</option>
-            <option value="2">Em trânsito</option>
-        </select>
-
+                <option value="0">Em estoque</option>
+                <option value="1">Sem estoque</option>
+                <option value="2">Em trânsito</option>
+            </select>
+        </div>
         <button onClick={callRegistro} >Registrar</button>
         </form>
 

@@ -15,7 +15,7 @@
 
 a {
   font-weight: 500;
-  color:  #8C57FF;
+  color:  #3BADFB;
   transition: all ease .3s;
   text-decoration: inherit;
 
@@ -51,9 +51,6 @@ button {
 button:hover {
   transform: scale(1.1);
 }
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
+
 
 
