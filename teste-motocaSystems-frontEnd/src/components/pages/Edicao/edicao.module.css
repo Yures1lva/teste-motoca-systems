@@ -5,3 +5,34 @@
     justify-content: space-between;
     border-bottom: 0.1px solid #CAC9CD;
 }
+
+
+
+
+.inputGroup {
+    position: relative; 
+    margin: 50px 30%;
+    
+}
+
+label {
+    position: absolute; 
+    top: -30%; 
+    left: 10px; 
+
+    pointer-events: none; 
+     background-color: #2A233C;
+     padding: 0 .5em;
+    transition: 0.2s ease; 
+}
+
+ input {
+    width: 100%;
+    padding: 12px 20px;
+    border: .1px solid #E7E3FC;
+    border-radius: 6px;
+    background-color: #2A233C;
+    transition: background-color 0.2s ease; /* Transição suave para animação */
+}
+
+

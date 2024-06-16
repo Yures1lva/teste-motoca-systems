@@ -37,7 +37,12 @@ function Registro(){
         <h2>Preencha as informações abaixo para registrar uma Moto</h2>
 
         <form action="">
-         <label >Código <input type="text" onChange={(e)=>{setCodigo(e.target.value)}}  /></label>
+         
+         <div className={styles.inputGroup}>
+           <label >Código </label>
+           <input type="text" onChange={(e)=>{setCodigo(e.target.value)}}  />
+
+         </div>
 
          <label >Modelo <input type="text" onChange={(e)=>{setModelo(e.target.value)}} /></label>
 

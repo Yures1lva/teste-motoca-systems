@@ -10,3 +10,9 @@ form{
     display: flex;
     flex-direction: column;
 }
+
+.inputGroup {
+    position: relative; 
+    margin: 50px 30%;
+    
+}
