@@ -4,6 +4,7 @@ import view from '../../assets/view.png'
 import styles from './card.module.css'
 import Moto from './modelMoto'
 import { deteleCards } from '../../services/dataBase'
+import { Link } from 'react-router-dom'
 
 
 
@@ -47,12 +48,12 @@ function CardHome({props}){
 
                     </a>
 
-                    <a href="">
+                    <Link to="/edicao">
 
                     <img src={view} alt="editar/vizualizar"></img>
 
 
-                    </a>
+                    </Link>
 
                 </div>
             

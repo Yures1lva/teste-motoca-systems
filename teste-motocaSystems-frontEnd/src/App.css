@@ -40,3 +40,12 @@
 .read-the-docs {
   color: #888;
 }
+
+
+.barraInicial {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 0.1px solid #CAC9CD;
+}
