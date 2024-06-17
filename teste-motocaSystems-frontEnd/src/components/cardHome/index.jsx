@@ -33,9 +33,9 @@ function CardHome({props}){
         <article  className={styles.card}>
                 <p>#{("000" + moto.codigo).slice(-4)}</p>
                 <ul>
-                    <li><span>{moto.modelo} <a className={meta[moto.status].style} >{meta[moto.status].value}</a></span></li>
-                    <li>valor: R$<span>{moto.valor}</span></li>
-                    <li>cor: <span> {moto.cor}</span></li>
+                    <li><span className={styles.modeloMoto}>{moto.modelo} <a className={meta[moto.status].style} >{meta[moto.status].value}</a></span></li>
+                    <li>valor: R${moto.valor}</li>
+                    <li>cor:  { moto.cor}</li>
                 </ul>
                 <div>
                    
@@ -48,7 +48,7 @@ function CardHome({props}){
 
                     </a>
 
-                    <Link to="/edicao">
+                    <Link to="/edicao" state={moto} >
 
                     <img src={view} alt="editar/vizualizar"></img>
 

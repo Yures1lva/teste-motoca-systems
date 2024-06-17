@@ -1,20 +1,36 @@
 {
   "motos": [
     {
-      "id": "4267",
-      "codigo": "5",
-      "modelo": "pop 110i",
-      "cor": "preta",
-      "valor": "11000",
+      "id": "74c7",
+      "codigo": "0001",
+      "modelo": "pop",
+      "cor": "branca",
+      "valor": "100000",
       "status": 0
     },
     {
-      "id": "0e9e",
-      "codigo": "6",
+      "id": "3a5c",
+      "codigo": "0002",
+      "modelo": "broz",
+      "cor": "preta",
+      "valor": "17000",
+      "status": "1"
+    },
+    {
+      "id": "0803",
+      "codigo": "0003",
+      "modelo": "cg 100",
+      "cor": "branca",
+      "valor": "15000",
+      "status": "2"
+    },
+    {
+      "id": "f702",
+      "codigo": "0004",
       "modelo": "pop 110i",
       "cor": "branca",
-      "valor": "12000",
-      "status": "1"
+      "valor": "90000",
+      "status": 0
     }
   ]
 }

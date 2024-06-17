@@ -9,7 +9,7 @@ function Registro(){
 
    
 
-    const [codigo, setCodigo] = useState(0)        
+    const [codigo, setCodigo] = useState("")        
     const [modelo, setModelo] = useState("")
     const [cor, setCor] = useState("")
     const [valor, setValor] = useState(0.0)
@@ -40,7 +40,7 @@ function Registro(){
          
          <div className={styles.inputGroup}>
            <label >Código </label>
-           <input type="text" onChange={(e)=>{setCodigo(e.target.value)}}  />
+           <input type="text" onChange={(e)=>{setCodigo(e.target.value)}} value={("000" + codigo).slice(-4)}  />
 
          </div>
 
