@@ -5,6 +5,7 @@ import styles from './card.module.css'
 import Moto from './modelMoto'
 import { deteleCards } from '../../services/dataBase'
 import { Link } from 'react-router-dom'
+import { useState } from 'react'
 
 
 
@@ -27,6 +28,11 @@ function CardHome({props}){
     const moto = new Moto({id: props.id, codigo: props.codigo, modelo: props.modelo, cor: props.cor, valor: props.valor ,status: props.status})
     meta [moto.status]
   
+    const [trashStyle, setTrashStyle] = useState(styles.enable) 
+    const [loadStyle, setLoadStyle] = useState(styles.disable) 
+
+
+    
 
     return <>
     
@@ -39,14 +45,18 @@ function CardHome({props}){
                 </ul>
                 <div>
                    
-                    <a  onClick={async ()=>{ deteleCards(moto.id).then(()=>{window.location.reload()})
+                    <a className={trashStyle}  onClick={async ()=>{ 
+                        setTrashStyle(styles.disable)
+                        setLoadStyle(styles.enable)
+                        await deteleCards(moto.id).then(()=>{window.location.reload()})
                         
                     }}>
 
-                    <img src={trash} alt="excluir" />
-
+                    <img  src={trash} alt="excluir" />
 
                     </a>
+                    <div className={`${loadStyle} ${styles.loader}`}></div>
+
 
                     <Link to="/edicao" state={moto} >
 

@@ -64,3 +64,29 @@
     text-transform: uppercase;
     font-weight: bold;
 }
+
+.disable{
+    display: none;
+}
+
+.enable{
+    display: flex;
+}
+
+.loader{
+    margin-right: 1em;
+    width: 18px;
+    height: 18px;
+    animation: loaderToTrash 1s linear infinite;
+    border-left: solid transparent;
+    border-top: 3px solid #FF4C51;
+    border-bottom: 3px solid #FF4C51;
+    border-right: 3px solid #FF4C51;
+    border-radius: 50%;
+    background-color: transparent;
+}
+
+@keyframes loaderToTrash{
+    from{transform: rotate(0deg);}
+    to{transform: rotate(360deg) ;}
+}

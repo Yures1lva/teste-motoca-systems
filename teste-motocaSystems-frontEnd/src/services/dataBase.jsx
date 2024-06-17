@@ -25,6 +25,9 @@ export  function getCards(setCards) {
 }
 
 export async function deteleCards(id){
+
+    await new Promise(r => setTimeout(r, 2000));
+
     try {
         await fetch(api+`/${id}`, {method:"DELETE", })
     } catch (error) {
