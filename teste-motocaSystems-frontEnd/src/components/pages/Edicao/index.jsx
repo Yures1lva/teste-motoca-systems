@@ -24,7 +24,7 @@ function Edicao( ) {
     <h2>Edite as informações que preferir!</h2>
 
     <div className={styles.inputGroup}>
-       <label >Código </label>
+       <label className={styles.labelDisable} >Código </label>
        <input type="text" disabled={true} value={"# "+("000" + moto.codigo).slice(-4)}  />
     </div>
 
@@ -60,6 +60,6 @@ function Edicao( ) {
 
     </div>
 
-    <button  onClick={()=>{updateCards(moto.id,{modelo: modelo, valor: valor, cor: cor, status: estoque} ).then(()=>{nav("/")})}  } >Atualizar</button>
+    <button className={styles.buttonUp} onClick={()=>{updateCards(moto.id,{modelo: modelo, valor: valor, cor: cor, status: estoque} ).then(()=>{nav("/")})}  } >Atualizar</button>
     </>
 } export default Edicao

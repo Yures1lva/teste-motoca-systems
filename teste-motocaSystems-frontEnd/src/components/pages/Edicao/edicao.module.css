@@ -11,12 +11,17 @@
 
 .inputGroup {
     position: relative; 
-    margin: 50px 30%;
-    
+    width: 419px;
+    height: 50px;
+    margin: 30px auto;  
 }
 
+.labelDisable{
+    color: #888
+}
 
-
-
-
-
+.buttonUp{
+    width: 419px;
+      height: 50px;
+      margin: 0px auto;
+  }

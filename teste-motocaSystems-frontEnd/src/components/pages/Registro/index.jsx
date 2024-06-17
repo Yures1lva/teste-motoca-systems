@@ -9,7 +9,7 @@ function Registro(){
 
    
 
-    const [codigo, setCodigo] = useState("")        
+    const [codigo, setCodigo] = useState("0")        
     const [modelo, setModelo] = useState("")
     const [cor, setCor] = useState("")
     const [valor, setValor] = useState(0.0)
@@ -17,7 +17,7 @@ function Registro(){
 
     
     
-    const callRegistro = ()=>{
+    const callRegistro = ()=> {
         registro(
             {   
                 codigo: codigo,
@@ -26,6 +26,7 @@ function Registro(){
                 valor: valor,
                 status: estoque}
         )
+        window.location.reload();
     }
 
     return <>
@@ -65,7 +66,7 @@ function Registro(){
                 </select>
             </div>
 
-            <button onClick={callRegistro}> <i>+ </i>Registrar</button> 
+            <button className={styles.buttonReg} onClick={callRegistro}> <i>+ </i>Registrar</button> 
 
     </>
 }export default Registro

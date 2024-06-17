@@ -1,12 +1,60 @@
 {
   "motos": [
     {
-      "id": "d925",
-      "codigo": "0001",
+      "id": "7328",
+      "codigo": "0002",
+      "modelo": "Broz 160",
+      "cor": "preta",
+      "valor": "15000",
+      "status": "1"
+    },
+    {
+      "id": "80da",
+      "codigo": "0003",
       "modelo": "pop 110i",
       "cor": "branca",
-      "valor": "11000",
-      "status": "1"
+      "valor": "1000",
+      "status": 0
+    },
+    {
+      "id": "0606",
+      "codigo": "0004",
+      "modelo": "pop 110i",
+      "cor": "preta",
+      "valor": "10000",
+      "status": 0
+    },
+    {
+      "id": "c6d5",
+      "codigo": "0005",
+      "modelo": "broz",
+      "cor": "preta",
+      "valor": "17000",
+      "status": 0
+    },
+    {
+      "id": "19eb",
+      "codigo": "0006",
+      "modelo": "pop 110i",
+      "cor": "branca",
+      "valor": "10000",
+      "status": 0
+    },
+    {
+      "id": "3ea8",
+      "codigo": "00010",
+      "modelo": "pop 110i",
+      "cor": "vermelha",
+      "valor": "10000",
+      "status": "2"
+    },
+    {
+      "id": "5a3f",
+      "codigo": "01000",
+      "modelo": "pop 110i",
+      "cor": "preta",
+      "valor": "12000",
+      "status": "2"
     }
   ]
 }

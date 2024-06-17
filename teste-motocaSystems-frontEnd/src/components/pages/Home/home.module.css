@@ -4,20 +4,32 @@
     align-items: center;
     justify-content: space-between;
     border-bottom: 0.1px solid #CAC9CD;
-}
-/*scale tava duplicando pois LINK ou tags 'a' já tinha um transformer no hover*/
-.buttonRegistro:hover{
-    transform: scale(1);
+    margin-bottom: 2em;
+    padding-bottom: 1em;
 }
 
+.barraInicial div{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    gap: 1em;
+}
+
+.barraInicial button{
+    width: 12em;
+}
+
+
+
 .buscador{
-    width: 20em;
-    padding-left: 12%;
+    width: 35em;
+    padding-left: 6%;
     background-image: url("../../../assets/search.png") ;
     background-repeat: no-repeat;
     background-position:4% 50%;
     border: #CAC9CD solid .8px;
     color: #CAC9CD;
+    font-size: 11;
 }
 
 .buscador::placeholder{
