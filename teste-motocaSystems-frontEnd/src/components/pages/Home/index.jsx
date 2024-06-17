@@ -32,11 +32,12 @@ function Home() {
              <h3>Tabela de Motos</h3>
              <ul>
                  <li className="inputGroup">
-                    <input onChange={(e)=>{
+                    
+                    <input className={styles.buscador} onChange={(e)=>{
                         setQuery(e.target.value)                   
                     }} type="text" placeholder="Busque por código, nome e cor" value={query}/>
                  </li>
-                 <li><Link to={"/registro"} className={styles.buttonRegistro} ><button  ><i>+ </i>NOVO REGISTRO</button></Link ></li>
+                 <li><Link to={"/registro"} className={styles.buttonRegistro} ><button  ><i>+</i>NOVO REGISTRO</button></Link ></li>
              </ul>
          </div>
          {(filteredData.map((card) => (<CardHome  key={card.id} props={card}/>)))}

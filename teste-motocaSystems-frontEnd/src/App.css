@@ -36,15 +36,26 @@ label {
   pointer-events: none; 
    background-color: #2A233C;
    padding: 0 .5em;
-  transition: 0.2s ease; 
 }
 
-input, select {
+input {
+  width: 100%;
+  padding: 12px 20px;
+  border: .1px solid #E7E3FC;
+  border-radius: 6px;
+  background-color: transparent;
+  box-sizing: border-box;
+
+}
+
+
+select {
   width: 100%;
   padding: 12px 20px;
   border: .1px solid #E7E3FC;
   border-radius: 6px;
   background-color: #2A233C;
-  transition: background-color 0.2s ease; /* Transição suave para animação */
+  box-sizing: border-box;
+
 }
 

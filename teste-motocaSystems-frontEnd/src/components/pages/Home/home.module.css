@@ -10,4 +10,17 @@
     transform: scale(1);
 }
 
+.buscador{
+    width: 20em;
+    padding-left: 12%;
+    background-image: url("../../../assets/search.png") ;
+    background-repeat: no-repeat;
+    background-position:4% 50%;
+    border: #CAC9CD solid .8px;
+    color: #CAC9CD;
+}
+
+.buscador::placeholder{
+    color: #CAC9CD;
+}
 

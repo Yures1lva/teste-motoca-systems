@@ -44,10 +44,10 @@
 
 .semEstoque{
     padding: .2em .4em ;
+    font-size: .68em;
     background-color: #55304C;
     color: #FF4C51;
     border-radius: 7em;
-    font-size: .8em;
 
 }
 
@@ -62,7 +62,7 @@
 
 .modeloMoto{
     text-transform: uppercase;
-    font-weight: bold;
+    font-family: 'PopinsBold';
 }
 
 .disable{
